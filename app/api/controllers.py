@@ -9,4 +9,4 @@ class WeatherController:
         return await self.service.get_current_weather()
 
     def get_health(self) -> HealthResponse:
-        return HealthResponse(status="UP")
+        return HealthResponse(status="ok")

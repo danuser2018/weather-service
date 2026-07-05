@@ -15,7 +15,7 @@ def client():
 def test_get_health(client):
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.json() == {"status": "UP"}
+    assert response.json() == {"status": "ok"}
 
 def test_get_current_weather_success(monkeypatch):
     app = create_app()
