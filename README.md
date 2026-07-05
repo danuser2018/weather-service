@@ -176,7 +176,7 @@ GET /health
 
 ```json
 {
-  "status": "UP"
+  "status": "ok"
 }
 ```
 

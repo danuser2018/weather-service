@@ -19,6 +19,19 @@ Los cambios se agrupan en las siguientes categorías:
 
 ---
 
+## [1.1.0]
+
+### Añadido
+
+- Archivo `.dockerignore` para optimizar el contexto de construcción de la imagen Docker omitiendo entornos locales, directorios de control de versiones y archivos de prueba.
+
+### Cambiado
+
+- Formato de respuesta del endpoint `/health` modificando el valor del campo `status` de `"UP"` a `"ok"`, alineándolo con la directiva estándar del ecosistema Nova.
+- Casos de prueba unitarios en `tests/test_api.py` actualizados para validar el nuevo estado `"ok"`.
+
+---
+
 ## [1.0.0]
 
 ### Añadido
